@@ -19,8 +19,10 @@ export class MainHeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  public logoutClicked() {
-    this.processLogout();
+  public openNav() {
+    document.getElementById("mySidenav").style.width = "70%";
+    // document.getElementById("flipkart-navbar").style.width = "50%";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
 
   private processLogout() {

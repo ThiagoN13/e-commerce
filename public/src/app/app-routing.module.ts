@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { TemplateMainComponent } from './core/page-templates/main/main.component';
 import { TemplateLoginComponent } from './core/page-templates/login/login.component';
-import { HomeComponent } from './core/components/home/home.component';
 import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
@@ -14,10 +13,6 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: HomeComponent,
-      },
-      {
-        path: 'dashboard',
         loadChildren: () =>
           import('./features/dashboard/dashboard.module').then(
             (m) => m.DashboardModule

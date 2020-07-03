@@ -2,6 +2,12 @@
 @import "~normalize.css";
 @import "variables.scss";
 
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Importing font awesome */
+@import '~font-awesome/css/font-awesome.min.css';
+
 //ngx-toastr
 @import "~ngx-toastr/toastr";
 
@@ -16,10 +22,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-main {
-  height: 100%;
 }
 
 .nomargin {

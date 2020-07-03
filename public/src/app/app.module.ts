@@ -8,6 +8,7 @@ import { TitleService } from './core/services/title/title.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthTokenInterceptor } from './core/interceptors/auth-token.interceptor';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { AuthTokenInterceptor } from './core/interceptors/auth-token.interceptor
     AppRoutingModule,
     CoreModule,
     BrowserAnimationsModule,
+    NgbModule,
   ],
   providers: [
     {

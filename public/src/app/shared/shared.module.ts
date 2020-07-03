@@ -7,10 +7,8 @@ import { MaterialModule } from './material/material.module';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ErrorComponent } from './components/error/error.component';
-import { BasicHeadingComponent } from './components/basic-heading/basic-heading.component';
 import { NoItemsComponent } from './components/no-items/no-items.component';
 import { FullPageLoaderComponent } from './components/full-page-loader/full-page-loader.component';
-import { DialogAreYouSureComponent } from './components/dialog-are-you-sure/dialog-are-you-sure.component';
 import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -19,10 +17,8 @@ import { ToastrModule } from 'ngx-toastr';
     SafeHtmlPipe,
     LoadingComponent,
     ErrorComponent,
-    BasicHeadingComponent,
     NoItemsComponent,
-    FullPageLoaderComponent,
-    DialogAreYouSureComponent,
+    FullPageLoaderComponent
   ],
   imports: [
     CommonModule,
@@ -43,11 +39,9 @@ import { ToastrModule } from 'ngx-toastr';
     SafeHtmlPipe,
     LoadingComponent,
     ErrorComponent,
-    BasicHeadingComponent,
     NoItemsComponent,
     FullPageLoaderComponent,
-    DialogAreYouSureComponent,
-    ToastrModule,
-  ],
+    ToastrModule
+  ]
 })
 export class SharedModule {}
