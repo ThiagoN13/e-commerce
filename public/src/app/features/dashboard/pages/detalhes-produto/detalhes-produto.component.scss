@@ -1,0 +1,145 @@
+.header-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: .80rem;
+
+  a {
+    font-size: .80rem;
+  }
+
+  .breadcrumb {
+    margin-bottom: 0;
+    background-color: transparent;
+    padding: 0.20rem 1rem;
+  }
+
+  .btn-group {
+    margin-left: auto;
+  }
+
+  .btn-share {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 50%;
+      background-color: #ccc;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.bbb_fav {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 200ms ease;
+  cursor: pointer;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:hover {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  i {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #cccccc;
+    line-height: 36px;
+    pointer-events: none;
+    z-index: 0;
+    transition: all 200ms ease;
+  }
+
+  &.active i {
+    color: red;
+  }
+}
+
+.product-gallery-featured:hover .bbb_fav {
+  visibility: visible;
+  opacity: 1;
+  top: 18px;
+  margin-right: 8px;
+}
+
+.product-info .product-gallery {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.product-gallery-featured {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px 0;
+  cursor: zoom-in;
+  
+  img {
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+  }
+}
+
+.product-gallery-thumbnails .thumbnails-list li {
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.thumbnails-list li img {
+  display: block;
+  width: 100%;
+}
+
+.product-gallery-thumbnails .thumbnails-list li:hover::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #007bff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product-info .product-seller-recommended {
+  padding: 20px 20px 0 20px;
+}
+
+.product-comments textarea {
+  height: 50px;
+  resize: none;
+}
+
+.last-questions-list li {
+  margin-bottom: 20px;
+
+  span {
+    padding-left: 10px;
+  }
+}
