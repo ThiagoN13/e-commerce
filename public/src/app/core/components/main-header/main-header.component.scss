@@ -435,7 +435,7 @@ section {
 .header_search_input {
   display: block;
   position: relative;
-  width: calc((100% - 50px) * 0.601);
+  width: calc(100% - 50px);
   height: 100%;
   line-height: 50px;
   border: none !important;
@@ -982,7 +982,7 @@ select {
   }
 
   .main_nav {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .main_nav_menu {
