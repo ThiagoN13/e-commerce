@@ -1,0 +1,70 @@
+<div class="container py-4 py-md-5">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-12 col-lg-8 cart pb-5">
+        <div class="title">
+          <div class="row">
+            <div class="col">
+              <h4>Pagamento</h4>
+            </div>
+          </div>
+        </div>
+
+        <router-outlet></router-outlet>
+
+        <div class="back-to-shop">
+          <a href="#">
+            <span class="text-muted">Voltar á loja</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 summary">
+        <div>
+          <h5>Resumo</h5>
+        </div>
+
+        <hr />
+
+        <div class="row mb-3">
+          <div class="col">Itens 3</div>
+          <div class="col text-right">R$ 132.00</div>
+        </div>
+
+        <form>
+          <div class="form-group mb-4">
+            <label>Endereço de entrega</label>
+            <select class="form-control">
+              <option class="text-muted">Minha rua bla bla - 12</option>
+            </select>
+            <a href="" class="text-primary pull-right">
+              <small>Cadastrar endereço</small>
+            </a>
+          </div>
+
+          <div class="form-group">
+            <label>Frete</label>
+            <select class="form-control">
+              <option class="text-muted">Sedex - R$5.00</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Cupom de desconto</label>
+            <input id="code" class="form-control" placeholder="Insira seu código" />
+          </div>
+        </form>
+
+        <div class="row" style="border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 2vh 0;">
+          <div class="col">PREÇO TOTAL</div>
+          <div class="col text-right">R$ 137.00</div>
+        </div>
+
+        <button class="btn btn-block mt-3 btn-primary">
+          <i class="fa fa-credit-card mr-2"></i>
+          Próximo
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

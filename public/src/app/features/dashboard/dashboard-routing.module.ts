@@ -4,7 +4,6 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
 import { OfertasComponent } from './pages/ofertas/ofertas.component';
 import { DetalhesProdutosComponent } from './pages/detalhes-produto/detalhes-produto.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
-import { PagamentoComponent } from './pages/pagamento/pagamento.component';
 
 const routes: Routes = [
   {
@@ -22,10 +21,6 @@ const routes: Routes = [
   {
     path: 'carrinho',
     component: CarrinhoComponent
-  },
-  {
-    path: 'pagamento',
-    component: PagamentoComponent
   }
 ];
 

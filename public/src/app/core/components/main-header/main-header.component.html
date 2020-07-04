@@ -16,7 +16,7 @@
                             <div class="top_bar_user">
                                 <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
                                 <div><a href="#">Cadastro</a></div>
-                                <div><a href="#">Login</a></div>
+                                <div><a [routerLink]="['/login']">Login</a></div>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                     <!-- Logo -->
                     <div class="col-lg-2 col-sm-3 col-3 order-1">
                         <div class="logo_container">
-                            <div class="logo"><a href="#">BBB</a></div>
+                            <div class="logo"><a [routerLink]="['/']">BBB</a></div>
                         </div>
                     </div> <!-- Search -->
                     <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
@@ -69,7 +69,7 @@
                                         <div class="cart_count"><span>3</span></div>
                                     </div>
                                     <div class="cart_content">
-                                        <div class="cart_text"><a href="#">Carrinho</a></div>
+                                        <div class="cart_text"><a [routerLink]="['/carrinho']">Carrinho</a></div>
                                         <div class="cart_price">$185</div>
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="blog.html">Raças<i class="fa fa-chevron-down"></i></a></li>
-                                    <li><a href="contact.html">Outlet<i class="fa fa-chevron-down"></i></a></li>
+                                    <li><a [routerLink]="['/ofertas']">Ofertas<i class="fa fa-chevron-down"></i></a></li>
                                 </ul>
                             </div> <!-- Menu Trigger -->
                             <div class="menu_trigger_container ml-auto">

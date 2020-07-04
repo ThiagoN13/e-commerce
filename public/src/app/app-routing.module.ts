@@ -9,13 +9,26 @@ const routes: Routes = [
   {
     path: '',
     component: TemplateMainComponent,
-    canActivate: [AuthGuard],
     children: [
       {
         path: '',
         loadChildren: () =>
           import('./features/dashboard/dashboard.module').then(
             (m) => m.DashboardModule
+          ),
+      },
+    ],
+  },
+  {
+    path: 'pagamento',
+    component: TemplateMainComponent,
+    canActivate: [AuthGuard],
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./features/pagamento/pagamento.module').then(
+            (m) => m.PagamentoModule
           ),
       },
     ],
