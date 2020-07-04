@@ -1,4 +1,4 @@
-<div class="container py-4">
+<div class="container py-5">
   <div class="row">
     <div class="col-md-4 col-lg-2">
       <app-aside-filtro></app-aside-filtro>
@@ -7,17 +7,21 @@
     <div class="col-md-8 col-lg-10">
       <div class="container">
         <div class="row mb-3">
-          <div class="col-md-6">
-  
+          <div class="col-md-4">
+            <select class="form-control custom-select-sm" placeholder="Ordenar por">
+              <option value="1">Menor Preço</option>
+              <option value="1">Maior Preço</option>
+              <option value="1">Mais Avaliado</option>
+            </select>
           </div>
   
-          <div class="col-md-6 text-right">
-            <button type="btn btn-link mr-2">
+          <div class="col-md-8 text-right">
+            <button type="button" class="btn btn-link pr-0">
               <i class="fa fa-th-list"></i>
             </button>
 
-            <button type="btn btn-link">
-              <i class="fa fa-card"></i>
+            <button type="button" class="btn btn-link">
+              <i class="fa fa-th-large"></i>
             </button>
           </div>
         </div>

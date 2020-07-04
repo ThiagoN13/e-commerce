@@ -1,5 +1,14 @@
+
+$bg: #0BAAD4;
+$hover: darken($bg, 10%);
+
 .aside-filtro {
   .lista-filtro {
     list-style-type: none;
+    padding: 0px;
+
+    li {
+      font-size: 14px;
+    }
   }
 }
