@@ -1,6 +1,7 @@
-<div class="owl-item">
+<div class="bbb_owl_item"
+  [class.bbb_list-item]="!isCard">
   <div class="bbb_item">
-      <div class="bbb_image d-flex flex-column align-items-center justify-content-center">
+      <div class="bbb_image">
         <img src="https://www.petlove.com.br/images/products/208139/small/Ra%C3%A7%C3%A3o_Affinity_PetCare_Gran_Plus_Frango_e_Arroz_para_Gatos_Castrados_Adultos_31024006_1KG.jpg?1558450480" alt="">
       </div>
       <div class="bbb_content">
@@ -8,15 +9,24 @@
           <div class="bbb_info clearfix">
               <div class="bbb_name mb-3">
                 <a [routerLink]="['/detalhes/racao']">Ração Úmida Nestlé Purina Friskies Sachê Peixe ao Molho para Gatos Filhotes</a>
+                <small class="bbb_descricao text-muted" *ngIf="!isCard">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nunc efficitur nunc est, id varius dolor accumsan eu. Donec rutrum, quam at iaculis sagittis,
+                  neque dui viverra velit, ac fringilla sapien risus vel turpis. Etiam in neque in felis venenatis condimentum.
+                  nec accumsan arcu eleifend ut. Proin sodales pharetra nibh id interdum. In mi turpis, ultricies quis tristique quis,
+                  molestie id libero eu, rutrum rhoncus sapien. Mauris sodales condimentum sapien, ac mollis erat.
+                </small>
               </div>
 
-              <div class="bbb_price">R$ 25,00</div>
-              <div class="bbb_star">
-                <span class="fa fa-star text-warning"></span>
-                <span class="fa fa-star text-warning"></span>
-                <span class="fa fa-star text-warning"></span>
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
+              <div class="bbb_footer">
+                <div class="bbb_price">R$ 25,00</div>
+                <div class="bbb_star">
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star text-warning"></span>
+                  <span class="fa fa-star-o"></span>
+                  <span class="fa fa-star-o"></span>
+                </div>
               </div>
           </div>
       </div>
@@ -27,3 +37,4 @@
       <app-favoritar-produto></app-favoritar-produto>
   </div>
 </div>
+

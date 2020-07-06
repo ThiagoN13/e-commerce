@@ -4,7 +4,7 @@
       <app-aside-filtro></app-aside-filtro>
     </div>
   
-    <div class="col-md-8 col-lg-10">
+    <div class="col-md-8 col-lg-10 my-3 my-md-0">
       <div class="container">
         <div class="row mb-3">
           <div class="col-8 col-md-4 col-sm-8">
@@ -16,26 +16,38 @@
           </div>
   
           <div class="col-4 col-md-8 col-sm-4 text-right">
-            <button type="button" class="btn btn-link pr-0">
+            <button type="button" class="btn btn-link shadow-none" [class.text-dark]="isCard" (click)="setVisualizacaoCard(false)">
               <i class="fa fa-th-list"></i>
             </button>
 
-            <button type="button" class="btn btn-link">
+            <button type="button" class="btn btn-link shadow-none" [class.text-dark]="!isCard" (click)="setVisualizacaoCard(true)">
               <i class="fa fa-th-large"></i>
             </button>
           </div>
         </div>
   
         <div class="row">
-          <div class="col-md-6 col-lg-4 mb-3">
-            <app-card-item></app-card-item>
+
+          <div class="mb-3" [ngClass]="isCard ? 'col-md-6 col-lg-4' : 'col-12'">
+            <app-card-item [isCard]="isCard"></app-card-item>
           </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <app-card-item></app-card-item>
+          <div class="mb-3" [ngClass]="isCard ? 'col-md-6 col-lg-4' : 'col-12'">
+            <app-card-item [isCard]="isCard"></app-card-item>
           </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <app-card-item></app-card-item>
+          <div class="mb-3" [ngClass]="isCard ? 'col-md-6 col-lg-4' : 'col-12'">
+            <app-card-item [isCard]="isCard"></app-card-item>
           </div>
+
+          <div class="mb-3" [ngClass]="isCard ? 'col-md-6 col-lg-4' : 'col-12'">
+            <app-card-item [isCard]="isCard"></app-card-item>
+          </div>
+          <div class="mb-3" [ngClass]="isCard ? 'col-md-6 col-lg-4' : 'col-12'">
+            <app-card-item [isCard]="isCard"></app-card-item>
+          </div>
+          <div class="mb-3" [ngClass]="isCard ? 'col-md-6 col-lg-4' : 'col-12'">
+            <app-card-item [isCard]="isCard"></app-card-item>
+          </div>
+
         </div>
       </div>
     </div>

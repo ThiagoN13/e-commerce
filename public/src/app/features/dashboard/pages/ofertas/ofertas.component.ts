@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ofertas.component.scss']
 })
 export class OfertasComponent implements OnInit {
+  public isCard: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public setVisualizacaoCard (isCard : boolean) {
+    this.isCard = isCard;
   }
 
 }
