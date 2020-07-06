@@ -58,7 +58,7 @@
               </div>
             </div>
 
-            <div class="bbb_fav"><i class="fa fa-heart"></i></div>
+            <app-favoritar-produto></app-favoritar-produto>
             <div class="bbb_remove"><i class="fa fa-trash text-danger"></i></div>
 
             <img src="https://www.petlove.com.br/images/products/208139/small/Ra%C3%A7%C3%A3o_Affinity_PetCare_Gran_Plus_Frango_e_Arroz_para_Gatos_Castrados_Adultos_31024006_1KG.jpg?1558450480" alt="Generic placeholder image" width="200"
@@ -80,7 +80,7 @@
           <div class="order_total_title">Total:</div>
           <div class="order_total_amount">R$ 64,99</div>
 
-          <button type="button" class="btn w-100 btn-primary mb-2">Pagar</button>
+          <a [routerLink]="['/pagamento']" class="btn w-100 btn-primary mb-2">Pagar</a>
         </div>
       </div>
     </div>
