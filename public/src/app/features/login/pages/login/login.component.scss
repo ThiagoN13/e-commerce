@@ -1,7 +1,37 @@
-mat-card {
-  padding: 48px;
-}
+.social-btns {
+  font-size: 22px;
 
-mat-card-title {
-  margin-bottom: 24px;
+  li {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: inline-block;
+
+    i {
+      font-size: 22px;
+    }
+  }
+
+  .btn-facebook {
+    background-color: #38519f;
+    border-color: #293b75;
+    color: #ffffff;
+    min-width: 150px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #293b75;
+    }
+  }
+
+  .btn-google {
+    background-color: #df270b;
+    border-color: #a01b03;
+    color: #ffffff;
+    min-width: 150px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #a01b03;
+    }
+  }
 }

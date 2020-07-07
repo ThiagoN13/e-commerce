@@ -24,41 +24,6 @@ a {
   text-decoration: none;
 }
 
-.nomargin {
-  margin: 0 !important;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.error {
-  display: block;
-  margin-top: 20px;
-  background: var(--error-bg);
-  padding: 6px;
-  border-radius: 4px;
-  color: var(--error-text);
-}
-
-.editable-heading {
-  border: none;
-  width: 100%;
-  outline: none;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.list-header {
-  padding: 12px 24px;
-}
-
-.list-outer {
-  border: 1px solid var(--light-grey);
-  border-radius: 6px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
+ul {
+  list-style: none;
 }

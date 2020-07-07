@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { TemplateMainComponent } from './core/page-templates/main/main.component';
-import { TemplateLoginComponent } from './core/page-templates/login/login.component';
 import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
@@ -22,7 +21,7 @@ const routes: Routes = [
   {
     path: 'pagamento',
     component: TemplateMainComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     children: [
       {
         path: '',
@@ -35,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: TemplateLoginComponent,
+    component: TemplateMainComponent,
     children: [
       {
         path: 'login',
