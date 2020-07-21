@@ -16,5 +16,4 @@ export class OfertasComponent implements OnInit {
   public setVisualizacaoCard (isCard : boolean) {
     this.isCard = isCard;
   }
-
 }

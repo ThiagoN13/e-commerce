@@ -5,7 +5,7 @@
 
           <div class="card-body">
             <div class="row">
-              <div class="product-info col-md-7 col-lg-8">
+              <div class="product-info col-md-7 col-lg-8 order-2 order-md-1">
                 <div class="product-gallery">
                   <div class="product-gallery-thumbnails">
                     <ol class="thumbnails-list list-unstyled">
@@ -112,7 +112,7 @@
                 </div>
               </div>
   
-              <div class="product-payment-details col-md-5 col-lg-4">
+              <div class="product-payment-details col-md-5 col-lg-4 order-1 order-md-2 mb-3 mb-md-0">
                 <p class="last-sold text-muted"><small>145 itens vendidos</small></p>
                 <h4 class="product-title mb-2">Ração Úmida Nestlé Purina Friskies Sachê Peixe ao Molho para Gatos Filhotes</h4>
                 <h2 class="product-price display-4 text-primary">R$ 25,00</h2>
@@ -126,12 +126,12 @@
                 <label for="quant">Quantidade</label>
                 <input type="number" name="quantity" min="1" id="quant" class="form-control mb-4 input-lg" placeholder="Escolha a quantidade">
 
-                <a href="/carrinho" class="btn btn-info btn-block mb-2 text-white">
+                <a [routerLink]="['/carrinho']" class="btn btn-info btn-block mb-2 text-white">
                   <i class="fa fa-shopping-cart mr-2"></i>
                   Adicionar ao carrinho
                 </a>
 
-                <a href="/pagamento" class="btn btn-primary btn-block text-white">
+                <a [routerLink]="['/pagamento']" class="btn btn-primary btn-block text-white">
                   <i class="fa fa-credit-card mr-2"></i>
                   Comprar
                 </a>

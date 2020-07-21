@@ -12,3 +12,30 @@
  #carrosel {
    width: 100%;
  }
+
+.contenedor_scroll {
+  text-align: center;
+  overflow-y: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px;
+  overflow-x: auto;
+
+  .contenedor {
+    display: inline;
+    white-space: nowrap; /*so important*/
+
+    .img_presentacion_mini {
+      margin-right: 10px;
+      display: inline-block;
+      padding-right: 10px;
+      cursor: pointer;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

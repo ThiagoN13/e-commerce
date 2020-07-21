@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginPageComponent } from './pages/login/login.component';
+import { CadastroPageComponent } from './pages/cadastro/cadastro.component';
 
 const routes: Routes = [
   {
@@ -8,6 +9,13 @@ const routes: Routes = [
     component: LoginPageComponent,
     data: {
       title: 'Welcome back',
+    },
+  },
+  {
+    path: 'cadastro',
+    component: CadastroPageComponent,
+    data: {
+      title: 'Cadastro',
     },
   },
 ];

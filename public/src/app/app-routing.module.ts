@@ -16,6 +16,11 @@ const routes: Routes = [
             (m) => m.DashboardModule
           ),
       },
+      {
+        path: 'login',
+        loadChildren: () =>
+          import('./features/login/login.module').then((m) => m.LoginModule),
+      }
     ],
   },
   {
@@ -33,13 +38,29 @@ const routes: Routes = [
     ],
   },
   {
-    path: '',
+    path: 'sobre',
     component: TemplateMainComponent,
     children: [
       {
-        path: 'login',
+        path: '',
         loadChildren: () =>
-          import('./features/login/login.module').then((m) => m.LoginModule),
+          import('./features/sobre/sobre.module').then(
+            (m) => m.SobreModule
+          ),
+      },
+    ],
+  },
+
+  {
+    path: 'fale-conosco',
+    component: TemplateMainComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./features/fale-conosco/fale-conosco.module').then(
+            (m) => m.FaleConoscoModule
+          ),
       },
     ],
   },

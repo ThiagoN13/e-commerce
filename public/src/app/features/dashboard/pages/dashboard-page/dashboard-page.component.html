@@ -25,42 +25,129 @@
   </a>
 </div>
 
-<div class="container">
+<div class="container pb-5">
+
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <h4>
+        Categorias
+      </h4>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-12">
+      <div class="contenedor_scroll">
+        <div class="contenedor">
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/mobile/home/cachorrosCateg.svg">
+            <span class="d-block text-primary">Cachorros</span>
+          </div>
+
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/mobile/home/gatosCateg.svg">
+            <span class="d-block text-primary">Gatos</span>
+          </div>
+
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/mobile/home/passarosCateg.svg">
+            <span class="d-block text-primary">Pássaros</span>
+          </div>
+
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/mobile/home/roedoresCateg.svg">
+            <span class="d-block text-primary">Roedores</span>
+          </div>
+
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/mobile/home/peixesCateg.svg">
+            <span class="d-block text-primary">Peixes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <h4>
+        Itens Disponíveis
+      </h4>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-12">
+      <div class="contenedor_scroll">
+        <div class="contenedor">
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/home/ração-seca.png">
+            <span class="d-block text-primary">Ração Seca</span>
+          </div>
+
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/home/antipulgas.png">
+            <span class="d-block text-primary">Antipulgas</span>
+          </div>
+
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/home/tapetes.png">
+            <span class="d-block text-primary">Tapetes</span>
+          </div>
+
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/home/medicamentos.png">
+            <span class="d-block text-primary">Medicamentos</span>
+          </div>
+
+          <div class="img_presentacion_mini">
+            <img src="https://www.petz.com.br/novaLoja/images/home/casinhas.png">
+            <span class="d-block text-primary">Casinhas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5 mb-2">
+    <div class="col-12 text-center">
+      <h4>
+        Produtos Recomendados
+      </h4>
+    </div>
+  </div>
+
   <div class="row"> 
-    <div class="card">
-      <img class="card-img-top" src="https://www.petlove.com.br/images/products/208139/small/Ra%C3%A7%C3%A3o_Affinity_PetCare_Gran_Plus_Frango_e_Arroz_para_Gatos_Castrados_Adultos_31024006_1KG.jpg?1558450480" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+
+    <div class="col-md-6 col-lg-4 mb-3">
+      <app-card-item [isCard]="true"></app-card-item>
     </div>
 
-    <div class="card">
-      <img class="card-img-top" src="https://www.petlove.com.br/images/products/219558/product/Areia_Sanit%C3%A1ria_Kelco_Pipicat_Ultra_Dry_3105882.jpg?1580212031" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+    <div class="col-md-6 col-lg-4 mb-3">
+      <app-card-item [isCard]="true"></app-card-item>
     </div>
 
-    <div class="card">
-      <img class="card-img-top" src="https://www.petlove.com.br/images/products/210994/product/Brinquedo_Chalesco_Pel%C3%BAcia_Porquinho_31020461_1.jpg?1562355715" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+    <div class="col-md-6 col-lg-4 mb-3">
+      <app-card-item [isCard]="true"></app-card-item>
+    </div>
+  </div>
+
+  <div class="row mt-5 mb-2">
+    <div class="col-12 text-center">
+      <h4>
+        Produtos em destaque
+      </h4>
+    </div>
+  </div>
+
+  <div class="row"> 
+
+    <div class="col-md-6 mb-3">
+      <app-card-item [isCard]="false"></app-card-item>
     </div>
 
-    <div class="card">
-      <img class="card-img-top" src="https://www.petlove.com.br/images/products/211839/product/Brinquedo_Chalesco_L%C3%A1tex_Piratex_-_Pirata_2318624_1.jpg?1564486134" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+    <div class="col-md-6 mb-3">
+      <app-card-item [isCard]="false"></app-card-item>
     </div>
   </div>
 </div>

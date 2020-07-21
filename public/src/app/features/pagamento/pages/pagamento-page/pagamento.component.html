@@ -13,7 +13,7 @@
         <router-outlet></router-outlet>
 
         <div class="back-to-shop">
-          <a href="#">
+          <a [routerLink]="['/ofertas']">
             <span class="text-muted">Voltar á loja</span>
           </a>
         </div>
@@ -60,7 +60,7 @@
           <div class="col text-right">R$ 137.00</div>
         </div>
 
-        <button class="btn btn-block mt-3 btn-primary">
+        <button class="btn btn-block mt-3 btn-primary" (click)="proximaPagina()">
           <i class="fa fa-credit-card mr-2"></i>
           Próximo
         </button>

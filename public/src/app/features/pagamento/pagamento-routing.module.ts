@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PagamentoComponent } from './pages/pagamento-page/pagamento.component';
 import { ListaItensComponent } from './pages/lista-itens/lista-itens.component';
 import { FormaPagamentoComponent } from './pages/forma-pagamento/forma-pagamento.component';
+import { CartaoComponent } from './pages/cartao/cartao.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'forma-pagamento',
         component: FormaPagamentoComponent
+      },
+      {
+        path: 'cartao',
+        component: CartaoComponent
       }
     ]
   }
