@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using server.Data;
 using server.Model;
 
+
 namespace server.Controllers
 {
 
@@ -31,7 +32,7 @@ namespace server.Controllers
 
             var cat2 = new Categoria
             {
-                Id = 1,
+                Id = 2,
                 Descricao = "Produto 1"
 
             };
@@ -39,20 +40,9 @@ namespace server.Controllers
             context.Categorias.Add(cat1);
             context.Categorias.Add(cat2);
 
-            context.SaveChanges();
-
+            // context.SaveChanges();
 
             IQueryable<Categoria> query = context.Categorias;
-
-
-            // if (model.Descricao != "")
-            //     query = query.Where(p => p.Descricao == model.Descricao);
-
-            // if (model.Sigla != "")
-            //     query = query.Where(p => p.Sigla == model.Sigla);
-
-            // if (model.Email != "")
-            //     query = query.Where(p => p.Email == model.Email);
 
             var retornCategorias = await query.ToListAsync();
 

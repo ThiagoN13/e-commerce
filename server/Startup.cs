@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using server.Data;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,12 +28,10 @@ namespace server
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddDbContext<DataContext>(options =>
+                options
+                    .UseNpgsql(Configuration.GetConnectionString("UCASAppDatabase")));
 
-            //  services.AddDbContext<DataContext>(options =>
-            // {
-            //     options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
-            // });
-            
             services.AddControllers();
             
         }
